@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { WorkPositionsComponent } from './work-positions/work-positions.component';
+import { WorkPositionItemComponent } from './work-positions/work-position-item/work-position-item.component';
+import { WorkPositionsService } from './work-positions/work-positions.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    WorkPositionsComponent,
+    WorkPositionItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [WorkPositionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
