@@ -1,6 +1,4 @@
-import { NONE_TYPE } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
-import { Experience } from 'src/app/shared/experience.model';
 import { WorkPosition } from 'src/app/shared/work-position.model';
 import { DatePipe } from '@angular/common';
 
@@ -13,8 +11,7 @@ export class WorkPositionItemComponent implements OnInit {
   @Input() work_position!: WorkPosition;
   datepipe: DatePipe = new DatePipe('en-US');
 
-  constructor() {
-   }
+  constructor() {}
 
   ngOnInit(): void {
   }

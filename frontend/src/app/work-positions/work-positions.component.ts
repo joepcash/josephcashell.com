@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { WorkPosition } from '../shared/work-position.model';
 import { WorkPositionsService } from './work-positions.service';
 
@@ -10,8 +10,7 @@ import { WorkPositionsService } from './work-positions.service';
 export class WorkPositionsComponent implements OnInit {
   work_positions!: WorkPosition[];
 
-  constructor(private workPositionsService: WorkPositionsService, 
-    private cdr: ChangeDetectorRef) {
+  constructor(private workPositionsService: WorkPositionsService) {
    }
 
   ngOnInit(): void {

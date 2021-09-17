@@ -11,13 +11,18 @@ import { WorkPositionsComponent } from './work-positions/work-positions.componen
 import { WorkPositionItemComponent } from './work-positions/work-position-item/work-position-item.component';
 import { WorkPositionsService } from './work-positions/work-positions.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoursesComponent } from './courses/courses.component';
+import { CourseItemComponent } from './courses/course-item/course-item.component';
+import { CoursesService } from './courses/courses.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     WorkPositionsComponent,
-    WorkPositionItemComponent
+    WorkPositionItemComponent,
+    CoursesComponent,
+    CourseItemComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
     MatExpansionModule
   ],
-  providers: [WorkPositionsService],
+  providers: [WorkPositionsService, CoursesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
