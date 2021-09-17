@@ -1,1 +1,16 @@
-<p>Title: {{ work_position.title }}</p>
+<mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ work_position.company }}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ work_position.title }} from {{ work_position.start_date }} to {{ work_position.end_date }}.
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <ul class="list-group">
+        <li class="list-group-item"
+        *ngFor="let experience of work_position.experience">
+        {{ experience.description }}
+    </li>
+    </ul>
+  </mat-expansion-panel>

@@ -15,7 +15,6 @@ export class WorkPositionItemComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    console.log("Making item");
   }
 
 }

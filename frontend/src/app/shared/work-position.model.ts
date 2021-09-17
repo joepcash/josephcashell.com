@@ -7,6 +7,6 @@ export class WorkPosition {
         public location: string, 
         public start_date: Date,
         public end_date: Date,
-        public experience: Experience
+        public experience: Experience[]
         ) {}
 }

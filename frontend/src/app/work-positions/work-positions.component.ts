@@ -18,7 +18,6 @@ export class WorkPositionsComponent implements OnInit {
     this.workPositionsService.getWorkPositions().subscribe(
       (work_positions: WorkPosition[]) => {
         this.work_positions = work_positions;
-        console.log(this.work_positions);
       }
     )
   }
