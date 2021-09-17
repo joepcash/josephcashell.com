@@ -1,10 +1,11 @@
-<mat-expansion-panel hideToggle>
+<mat-expansion-panel hideToggle class="my-headers-align">
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{ work_position.company }}
       </mat-panel-title>
       <mat-panel-description>
-        {{ work_position.title }} from {{ work_position.start_date }} to {{ work_position.end_date }}.
+        {{ work_position.title }} from 
+        {{ cleanDate(work_position.start_date) }} to {{ cleanDate(work_position.end_date) }}.
       </mat-panel-description>
     </mat-expansion-panel-header>
     <ul class="list-group">
